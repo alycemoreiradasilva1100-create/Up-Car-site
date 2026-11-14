@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="UP CAR Serviços Automotivos em Americana/SP.">
+  <meta name="author" content="UP CAR Serviços Automotivos">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <title>UP CAR | Serviços Automotivos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+
+  <style>
+    :root {
+      --up-red: #ff0000;
+    }
+
+    .main-header .logo a em {
+      color: var(--up-red) !important;
+      font-style: normal;
+    }
+
+    .main-header .main-nav .main-menu li a:hover,
+    .main-header .main-nav .main-menu li.active a {
+      color: var(--up-red) !important;
+    }
+
+    .main-menu li.upcar-control-item {
+      margin-left: 8px;
+      line-height: normal;
+      vertical-align: middle;
+    }
+
+    .main-menu li.upcar-control-item button {
+      background: transparent;
+      color: #fff;
+      border: 1px solid var(--up-red);
+      border-radius: 4px;
+      padding: 8px 10px;
+      cursor: pointer;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .main-menu li.upcar-control-item button:hover {
+      background: var(--up-red);
+      color: #fff;
+    }
+
+    .main-menu li.upcar-control-item:hover button {
+      border-color: var(--up-red);
+    }
+
+    .dark-mode {
+      background-color: #111;
+      color: #f5f5f5;
+    }
+
+    .dark-mode .section.why-us,
+    .dark-mode .section.courses,
+    .dark-mode .section.contact {
+      background-color: #171717;
+    }
+
+    .dark-mode .section-heading h2,
+    .dark-mode .left-content h4,
+    .dark-mode .left-content p,
+    .dark-mode .down-content h4,
+    .dark-mode .down-content p {
+      color: #f5f5f5;
+    }
+
+    .dark-mode .down-content {
+      background-color: #222;
+    }
+
+    .dark-mode input,
+    .dark-mode textarea {
+      background-color: #242424;
+      color: #fff;
+      border-color: #555;
+    }
+
+    .light-mode {
+      background-color: #fff;
+      color: #222;
+    }
+
+    .light-mode .section.why-us,
+    .light-mode .section.courses,
+    .light-mode .section.contact {
+      background-color: #f7f7f7;
+    }
+
+    .light-mode .section-heading h2,
+    .light-mode .left-content h4,
+    .light-mode .left-content p,
+    .light-mode .down-content h4,
+    .light-mode .down-content p {
+      color: #222;
+    }
+
+    .light-mode .down-content {
+      background-color: #fff;
+    }
+
+    .light-mode input,
+    .light-mode textarea {
+      background-color: #fff;
+      color: #222;
+    }
+
+    @media (max-width: 950px) {
+      .main-menu li.upcar-control-item {
+        display: inline-block;
+        margin: 8px 5px;
+      }
+
+      .main-menu li.upcar-control-item button {
+        padding: 7px 10px;
+      }
+    }
+
+
+    body.dark-mode {
+      background-color: #111 !important;
+      color: #f5f5f5 !important;
+    }
+
+    body.light-mode {
+      background-color: #fff !important;
+      color: #222 !important;
+    }
+
+    body.dark-mode .features {
+      background-color: #111 !important;
+    }
+
+    body.light-mode .features {
+      background-color: #f4f4f4 !important;
+    }
+
+    body.dark-mode .features-post {
+      background-color: #202020 !important;
+    }
+
+    body.light-mode .features-post {
+      background-color: #fff !important;
+    }
+
+    body.dark-mode .features-post h4,
+    body.dark-mode .features-post p,
+    body.dark-mode .features-post a {
+      color: #f5f5f5 !important;
+    }
+
+    body.light-mode .features-post h4,
+    body.light-mode .features-post p,
+    body.light-mode .features-post a {
+      color: #222 !important;
+    }
+
+    body.dark-mode .section-heading h2,
+    body.dark-mode .tabs-content h4,
+    body.dark-mode .tabs-content p,
+    body.dark-mode .left-content,
+    body.dark-mode .left-content h4,
+    body.dark-mode .left-content p,
+    body.dark-mode .coming-soon h4,
+    body.dark-mode .coming-soon h6,
+    body.dark-mode .coming-soon span,
+    body.dark-mode .contact p,
+    body.dark-mode footer p {
+      color: #f5f5f5 !important;
+    }
+
+    body.light-mode .section-heading h2,
+    body.light-mode .tabs-content h4,
+    body.light-mode .tabs-content p,
+    body.light-mode .left-content,
+    body.light-mode .left-content h4,
+    body.light-mode .left-content p,
+    body.light-mode .coming-soon h4,
+    body.light-mode .coming-soon h6,
+    body.light-mode .coming-soon span,
+    body.light-mode .contact p,
+    body.light-mode footer p {
+      color: #222 !important;
+    }
+
+    body.dark-mode .down-content {
+      background-color: #222 !important;
+    }
+
+    body.light-mode .down-content {
+      background-color: #fff !important;
+    }
+
+    body.dark-mode .down-content h4,
+    body.dark-mode .down-content p,
+    body.dark-mode .down-content a {
+      color: #f5f5f5 !important;
+    }
+
+    body.light-mode .down-content h4,
+    body.light-mode .down-content p,
+    body.light-mode .down-content a {
+      color: #222 !important;
+    }
+
+    body.dark-mode .contact {
+      background-color: #171717 !important;
+    }
+
+    body.light-mode .contact {
+      background-color: #f7f7f7 !important;
+    }
+
+    body.dark-mode input,
+    body.dark-mode textarea {
+      background-color: #242424 !important;
+      color: #fff !important;
+      border-color: #555 !important;
+    }
+
+    body.light-mode input,
+    body.light-mode textarea {
+      background-color: #fff !important;
+      color: #222 !important;
+      border-color: #ccc !important;
+    }
+
+    body.dark-mode .tabs-content,
+    body.dark-mode .tabs-content article {
+      color: #f5f5f5 !important;
+    }
+
+    body.light-mode .tabs-content,
+    body.light-mode .tabs-content article {
+      color: #222 !important;
+    }
+
+    body.dark-mode .upcar-control-item button {
+      color: #fff !important;
+    }
+
+    body.light-mode .upcar-control-item button {
+      color: #222 !important;
+    }
+
+
+    body.light-mode {
+      background: #ffffff !important;
+      color: #222222 !important;
+    }
+
+    body.light-mode .main-header {
+      background-color: rgba(255,255,255,0.97) !important;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    }
+
+    body.light-mode .main-header .logo a,
+    body.light-mode .main-header .main-nav .main-menu > li > a,
+    body.light-mode .main-header .menu-link {
+      color: #171717 !important;
+    }
+
+    body.light-mode .main-header .main-nav .main-menu li a:hover,
+    body.light-mode .main-header .main-nav .main-menu li.active a {
+      color: #ff0000 !important;
+    }
+
+    body.light-mode .main-menu .sub-menu {
+      background: #ffffff !important;
+    }
+
+    body.light-mode .main-menu .sub-menu a {
+      color: #222222 !important;
+    }
+
+    body.light-mode .upcar-control-item button {
+      color: #222222 !important;
+      background: #ffffff !important;
+      border-color: #ff0000 !important;
+    }
+
+    body.light-mode .upcar-control-item button:hover {
+      color: #ffffff !important;
+      background: #ff0000 !important;
+    }
+
+    body.light-mode .features {
+      background: #f2f2f2 !important;
+    }
+
+    body.light-mode .features-post,
+    body.light-mode .features-post .features-content,
+    body.light-mode .features-post .content-show,
+    body.light-mode .features-post .content-hide {
+      background-color: #ffffff !important;
+    }
+
+    body.light-mode .features-post h4,
+    body.light-mode .features-post p,
+    body.light-mode .features-post a,
+    body.light-mode .features-post i {
+      color: #222222 !important;
+    }
+
+    body.light-mode .features-post h4 i {
+      color: #ff0000 !important;
+    }
+
+
+    body.light-mode .why-us,
+    body.light-mode .coming-soon,
+    body.light-mode .courses,
+    body.light-mode .video,
+    body.light-mode .contact {
+      background-color: rgba(255,255,255,0.90) !important;
+      background-blend-mode: screen !important;
+    }
+
+    body.light-mode .why-us,
+    body.light-mode .courses,
+    body.light-mode .contact {
+      color: #222222 !important;
+    }
+
+    body.light-mode .section-heading h2,
+    body.light-mode .tabs-content h4,
+    body.light-mode .tabs-content p,
+    body.light-mode #tabs ul li a,
+    body.light-mode .left-content,
+    body.light-mode .left-content h4,
+    body.light-mode .left-content p,
+    body.light-mode .left-content span,
+    body.light-mode .coming-soon h4,
+    body.light-mode .coming-soon h6,
+    body.light-mode .coming-soon span,
+    body.light-mode .contact p {
+      color: #222222 !important;
+    }
+
+    body.light-mode #tabs ul li a:after {
+      background-color: #ff0000 !important;
+    }
+
+    body.light-mode #tabs ul li a {
+      color: #222222 !important;
+    }
+
+    body.light-mode .tabs-content {
+      background: transparent !important;
+    }
+
+    body.light-mode .right-content,
+    body.light-mode .contact form {
+      background-color: rgba(255,255,255,0.94) !important;
+      color: #222222 !important;
+    }
+
+    body.light-mode .down-content {
+      background-color: #ffffff !important;
+      color: #222222 !important;
+      border: 1px solid #e5e5e5;
+    }
+
+    body.light-mode .down-content h4,
+    body.light-mode .down-content p,
+    body.light-mode .down-content a {
+      color: #222222 !important;
+    }
+
+    body.light-mode input,
+    body.light-mode textarea {
+      background-color: #ffffff !important;
+      color: #222222 !important;
+      border: 1px solid #cccccc !important;
+    }
+
+    body.light-mode input::placeholder,
+    body.light-mode textarea::placeholder {
+      color: #777777 !important;
+    }
+
+    body.light-mode footer {
+      background-color: #eeeeee !important;
+    }
+
+    body.light-mode footer p {
+      color: #222222 !important;
+    }
+
+    body.light-mode .main-button a,
+    body.light-mode .button,
+    body.light-mode #form-submit {
+      background-color: #ff0000 !important;
+      color: #ffffff !important;
+    }
+
+    body.light-mode .main-button a:hover,
+    body.light-mode .button:hover,
+    body.light-mode #form-submit:hover {
+      background-color: #c90000 !important;
+    }
+
+    body.light-mode .text-button-pay a,
+    body.light-mode .text-button-free a {
+      color: #ff0000 !important;
+    }
+
+    body.light-mode .owl-nav button,
+    body.light-mode .owl-dots button {
+      color: #ff0000 !important;
+    }
+
+    body.light-mode .video-item .video-caption h4 {
+      color: #222222 !important;
+    }
+
+
+    body.light-mode .main-banner .video-overlay {
+      background-color: rgba(255,255,255,0.10) !important;
+    }
+
+    body.light-mode .main-banner .caption h6,
+    body.light-mode .main-banner .caption h2 {
+      color: #ffffff !important;
+    }
+
+    body, body * {
+      transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+    }
+.upcar-tips {
+  background: #111;
+  padding: 85px 0;
+  color: #fff;
+}
+
+.upcar-tips .section-heading h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.upcar-tips-intro {
+  max-width: 780px;
+  margin: 0 auto 45px;
+  text-align: center;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.upcar-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.upcar-article {
+  background: #202020;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.upcar-article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,.25);
+}
+
+.upcar-article-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.upcar-article-content {
+  padding: 25px;
+}
+
+.upcar-article-category {
+  display: inline-block;
+  color: #ff3333;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.upcar-article h3 {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.upcar-article p {
+  color: #ccc;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.upcar-article details {
+  margin-top: 18px;
+}
+
+.upcar-article summary {
+  display: inline-block;
+  background: #ff0000;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.upcar-article summary::-webkit-details-marker {
+  display: none;
+}
+
+.upcar-article summary:hover {
+  background: #c90000;
+}
+
+.upcar-article details[open] summary {
+  margin-bottom: 20px;
+}
+
+.upcar-article-full {
+  padding-top: 5px;
+}
+
+.upcar-article-full h4 {
+  color: #ff3333;
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
+
+.upcar-article-video {
+  width: 100%;
+  margin-top: 18px;
+  border-radius: 6px;
+  background: #000;
+  display: block;
+}
+
+.upcar-article-cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.upcar-article-cta p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.upcar-article-cta a {
+  display: inline-block;
+  background: #ff0000;
+  color: #fff !important;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.upcar-article-cta a:hover {
+  background: #c90000;
+}
+
+body.light-mode .upcar-tips {
+  background: #f2f2f2 !important;
+  color: #222 !important;
+}
+
+body.light-mode .upcar-tips .section-heading h2,
+body.light-mode .upcar-article h3,
+body.light-mode .upcar-article-full h4 {
+  color: #222 !important;
+}
+
+body.light-mode .upcar-tips-intro,
+body.light-mode .upcar-article p,
+body.light-mode .upcar-article-cta p {
+  color: #555 !important;
+}
+
+body.light-mode .upcar-article {
+  background: #fff !important;
+  border-color: #ddd !important;
+}
+
+body.light-mode .upcar-article-category {
+  color: #d00000 !important;
+}
+
+@media(max-width:767px) {
+  .upcar-tips {
+    padding: 55px 15px;
+  }
+
+  .upcar-articles-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .upcar-article-image {
+    height: 220px;
+  }
+
+  .upcar-article-content {
+    padding: 20px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#top"><em>UP</em> CAR</a>
+    </div>
+
+    <a href="#menu" class="menu-link">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Início</a></li>
+
+        <li class="has-submenu">
+          <a href="#section2">A UP CAR</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Quem somos</a></li>
+            <li><a href="#section4">O que fazemos?</a></li>
+            <li><a href="#section2">Nossos diferenciais</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#section4">Serviços</a></li>
+        <li><a href="#section5">Dicas automotivas</a></li>
+        <li><a href="#section6">Contato</a></li>
+
+        <li class="upcar-control-item">
+          <button type="button" id="themeToggle">☀ Claro</button>
+        </li>
+
+        <li class="upcar-control-item">
+          <button type="button" id="languageToggle">EN</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <section class="section main-banner" id="top" data-section="section1">
+
+    <video autoplay muted loop playsinline preload="metadata" id="bg-video">
+      <source src="assets/videos/upcar-video-01.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay header-text">
+      <div class="caption">
+
+        <h6>UP CAR SERVIÇOS AUTOMOTIVOS • AMERICANA/SP</h6>
+
+        <h2><em>Seu carro</em> em boas mãos</h2>
+
+        <div class="main-button">
+          <div class="scroll-to-section">
+            <a href="#section2">Conheça a UP CAR</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="features">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i> Mecânica geral</h4>
+              </div>
+
+              <div class="content-hide">
+                <p>
+                  Manutenção e reparos para manter seu veículo seguro,
+                  eficiente e pronto para rodar. Conte com a equipe da UP CAR
+                  para cuidar do seu carro.
+                </p>
+
+                <p class="hidden-sm">
+                  Atendimento transparente, diagnóstico cuidadoso e atenção
+                  às necessidades do seu veículo.
+                </p>
+
+                <div class="scroll-to-section">
+                  <a href="#section2">Saiba mais</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i> Revisão preventiva</h4>
+              </div>
+
+              <div class="content-hide">
+                <p>
+                  Manutenção e reparos para manter seu veículo seguro,
+                  eficiente e pronto para rodar. Conte com a equipe da UP CAR
+                  para cuidar do seu carro.
+                </p>
+
+                <p class="hidden-sm">
+                  Atendimento transparente, diagnóstico cuidadoso e atenção
+                  às necessidades do seu veículo.
+                </p>
+
+                <div class="scroll-to-section">
+                  <a href="#section2">Detalhes</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i> Diagnóstico automotivo</h4>
+              </div>
+
+              <div class="content-hide">
+                <p>
+                  Manutenção e reparos para manter seu veículo seguro,
+                  eficiente e pronto para rodar. Conte com a equipe da UP CAR
+                  para cuidar do seu carro.
+                </p>
+
+                <p class="hidden-sm">
+                  Atendimento transparente, diagnóstico cuidadoso e atenção
+                  às necessidades do seu veículo.
+                </p>
+
+                <div class="scroll-to-section">
+                  <a href="#section4">Saiba mais</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+      <video autoplay muted loop playsinline class="upcar-article-video">
+        <source src="assets/videos/experiencia.mp4" type="video/mp4">
+        </video>
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Por que escolher a UP CAR?</h2>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div id="tabs">
+
+            <ul>
+              <li><a href="#tabs-1">Experiência</a></li>
+              <li><a href="#tabs-2">Atendimento</a></li>
+              <li><a href="#tabs-3">Compromisso com seu veículo</a></li>
+            </ul>
+
+            <section class="tabs-content">
+
+              <article id="tabs-1">
+                <div class="row">
+
+                  <div class="col-md-6">
+                    <img src="assets/images/upcar-cambio.jpg" alt="Serviços automotivos UP CAR">
+                  </div>
+
+                  <div class="col-md-6">
+                    <h4>QUEM SOMOS</h4>
+
+                    <p>
+                      A UP CAR Serviços Automotivos atua em Americana/SP,
+                      oferecendo serviços completos de manutenção preventiva
+                      e corretiva. Trabalhamos com responsabilidade, qualidade
+                      e dedicação para proporcionar mais segurança, desempenho
+                      e confiança para você e seu veículo.
+                    </p>
+                  </div>
+
+                </div>
+              </article>
+
+              <article id="tabs-2">
+                <div class="row">
+
+                  <div class="col-md-6">
+                    <img src="assets/images/atendimento.jfif" alt="Atendimento UP CAR">
+                  </div>
+
+                  <div class="col-md-6">
+                    <h4>Atendimento transparente</h4>
+
+                    <p>
+                      Nosso atendimento é baseado em transparência,
+                      diagnóstico cuidadoso e orientação clara sobre os
+                      serviços necessários para seu veículo.
+                    </p>
+
+                    <p>
+                      Com quatro anos de atuação, trabalhamos com
+                      responsabilidade, transparência e atenção às
+                      necessidades de cada veículo.
+                    </p>
+                  </div>
+
+                </div>
+              </article>
+
+              <article id="tabs-3">
+                <div class="row">
+
+                  <div class="col-md-6">
+                    <img src="assets/images/clienteFeliz.jfif" alt="Compromisso automotivo">
+                  </div>
+
+                  <div class="col-md-6">
+                    <h4>EXCELÊNCIA AUTOMOTIVA</h4>
+
+                    <p>
+                      A UP CAR Serviços Automotivos oferece soluções completas
+                      em manutenção e reparação automotiva. Nossa equipe
+                      trabalha com compromisso, qualidade e responsabilidade
+                      para garantir mais segurança, desempenho e tranquilidade
+                      em cada quilômetro da sua jornada.
+                    </p>
+                  </div>
+
+                </div>
+              </article>
+
+            </section>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section courses" data-section="section4">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Nossos serviços</h2>
+          </div>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+
+          <div class="item">
+            <img src="assets/images/upcar-cambio.jpg" alt="Troca de óleo e filtros">
+            <div class="down-content">
+              <h4>Troca de óleo e filtros</h4>
+              <p>
+                Manutenção e reparos automotivos para contribuir com a
+                segurança, o desempenho e a durabilidade do seu veículo.
+                Consulte nossa equipe.
+              </p>
+              <div class="text-button-pay">
+                <a href="https://wa.me/5519991025373">Agendar <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="assets/images/upcar-video-02.jpg" alt="Alinhamento e balanceamento">
+            <div class="down-content">
+              <h4>Alinhamento e balanceamento</h4>
+              <p>
+                Manutenção e reparos automotivos para contribuir com a
+                segurança, o desempenho e a durabilidade do seu veículo.
+                Consulte nossa equipe.
+              </p>
+              <div class="text-button-free">
+                <a href="https://wa.me/5519991025373">Agendar <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="assets/images/upcar-video-03.jpg" alt="Motor">
+            <div class="down-content">
+              <h4>Motor</h4>
+              <p>
+                Manutenção e reparos automotivos para contribuir com a
+                segurança, o desempenho e a durabilidade do seu veículo.
+                Consulte nossa equipe.
+              </p>
+              <div class="text-button-pay">
+                <a href="https://wa.me/5519991025373">Agendar <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="assets/images/upcar-video-04.jpg" alt="Freios">
+            <div class="down-content">
+              <h4>Freios</h4>
+              <p>
+                Manutenção e reparos automotivos para contribuir com a
+                segurança, o desempenho e a durabilidade do seu veículo.
+                Consulte nossa equipe.
+              </p>
+              <div class="text-button-free">
+                <a href="https://wa.me/5519991025373">Agendar <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="assets/images/upcar-video-01.jpg" alt="Suspensão">
+            <div class="down-content">
+              <h4>Suspensão</h4>
+              <p>
+                Manutenção e reparos automotivos para contribuir com a
+                segurança, o desempenho e a durabilidade do seu veículo.
+                Consulte nossa equipe.
+              </p>
+              <div class="text-button-pay">
+                <a href="https://wa.me/5519991025373">Agendar <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="assets/images/upcar-cambio.jpg" alt="Embreagem">
+            <div class="down-content">
+              <h4>Embreagem</h4>
+              <p>
+                Manutenção e reparos automotivos para contribuir com a
+                segurança, o desempenho e a durabilidade do seu veículo.
+                Consulte nossa equipe.
+              </p>
+              <div class="text-button-free">
+                <a href="https://wa.me/5519991025373">Agendar <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="assets/images/upcar-video-02.jpg" alt="Câmbio automático e manual">
+            <div class="down-content">
+              <h4>Câmbio automático e manual</h4>
+              <p>
+                Manutenção e reparos automotivos para contribuir com a
+                segurança, o desempenho e a durabilidade do seu veículo.
+                Consulte nossa equipe.
+              </p>
+              <div class="text-button-free">
+                <a href="https://wa.me/5519991025373">Agendar <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="assets/images/upcar-video-03.jpg" alt="Mecânica geral">
+            <div class="down-content">
+              <h4>Mecânica geral</h4>
+              <p>
+                Manutenção e reparos automotivos para contribuir com a
+                segurança, o desempenho e a durabilidade do seu veículo.
+                Consulte nossa equipe.
+              </p>
+              <div class="text-button-pay">
+                <a href="https://wa.me/5519991025373">Agendar <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="assets/images/upcar-video-04.jpg" alt="Manutenção preventiva">
+            <div class="down-content">
+              <h4>Manutenção preventiva</h4>
+              <p>
+                Manutenção e reparos automotivos para contribuir com a
+                segurança, o desempenho e a durabilidade do seu veículo.
+                Consulte nossa equipe.
+              </p>
+              <div class="text-button-pay">
+                <a href="https://wa.me/5519991025373">Agendar <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="assets/images/upcar-video-01.jpg" alt="Diagnóstico automotivo">
+            <div class="down-content">
+              <h4>Diagnóstico automotivo</h4>
+              <p>
+                Manutenção e reparos automotivos para contribuir com a
+                segurança, o desempenho e a durabilidade do seu veículo.
+                Consulte nossa equipe.
+              </p>
+              <div class="text-button-free">
+                <a href="https://wa.me/5519991025373">Agendar <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="assets/images/upcar-cambio.jpg" alt="Reparos automotivos">
+            <div class="down-content">
+              <h4>Reparos automotivos</h4>
+              <p>
+                Manutenção e reparos automotivos para contribuir com a
+                segurança, o desempenho e a durabilidade do seu veículo.
+                Consulte nossa equipe.
+              </p>
+              <div class="text-button-pay">
+                <a href="https://wa.me/5519991025373">Agendar <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <section class="section upcar-tips" data-section="section5">
+    <div class="container">
+
+      <div class="section-heading">
+        <h2>Dicas automotivas</h2>
+      </div>
+
+      <p class="upcar-tips-intro">
+        Cuidar do seu veículo vai muito além de abastecer.
+        Confira nossas dicas para manter seu carro seguro,
+        econômico e em boas condições por muito mais tempo.
+      </p>
+
+      <div class="upcar-articles-grid">
+
+  
+        <article class="upcar-article">
+          <img
+            class="upcar-article-image"
+            src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=85"
+            alt="Painel de veículo com luzes de advertência"
+          >
+
+          <div class="upcar-article-content">
+            <span class="upcar-article-category">Cuidados com o veículo</span>
+
+            <h3>O que significam as luzes do painel?</h3>
+
+            <p>
+              As luzes do painel são sinais importantes sobre o funcionamento
+              do seu veículo. Saber identificá-las pode evitar problemas
+              maiores e ajudar a manter sua segurança.
+            </p>
+
+            <details>
+              <summary>Leia o artigo completo</summary>
+
+              <div class="upcar-article-full">
+                <h4>Fique atento aos sinais do seu carro</h4>
+
+                <p>
+                  As luzes do painel funcionam como um sistema de comunicação
+                  entre o veículo e o motorista. Cada símbolo indica uma
+                  condição ou possível falha que merece atenção.
+                </p>
+
+                <h4>Luz vermelha</h4>
+
+                <p>
+                  Geralmente indica uma situação que exige atenção imediata.
+                  Se uma luz vermelha acender durante a condução, procure um
+                  local seguro para parar e consulte um profissional.
+                </p>
+
+                <h4>Luz amarela ou laranja</h4>
+
+                <p>
+                  Indica que algum sistema precisa ser verificado. Mesmo que
+                  o veículo continue funcionando, não ignore o aviso.
+                </p>
+
+                <h4>Não ignore os avisos</h4>
+
+                <p>
+                  Se uma luz permanecer acesa ou surgir durante o trajeto,
+                  procure uma oficina para realizar o diagnóstico correto.
+                  Evite tentar adivinhar o problema apenas pelo símbolo.
+                </p>
+
+                <video class="upcar-article-video" controls preload="metadata">
+                  <source src="assets/videos/videoplayback (4).mp4" type="video/mp4">
+                  Seu navegador não suporta a reprodução de vídeo.
+                </video>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="upcar-article">
+          <img
+            class="upcar-article-image"
+            src="https://site.zuldigital.com.br/blog/wp-content/uploads/2020/11/shutterstock_1126225445_Easy-Resize.com_.jpg"
+            alt="Manutenção e troca de óleo do motor"
+          >
+
+          <div class="upcar-article-content">
+            <span class="upcar-article-category">Manutenção preventiva</span>
+
+            <h3>Quando trocar o óleo do motor?</h3>
+
+            <p>
+              O óleo é essencial para lubrificar as peças internas do motor,
+              reduzir o atrito e ajudar a controlar a temperatura.
+              A troca no período correto faz toda a diferença.
+            </p>
+
+            <details>
+              <summary>Leia o artigo completo</summary>
+
+              <div class="upcar-article-full">
+                <h4>Por que o óleo é tão importante?</h4>
+
+                <p>
+                  O óleo lubrificante reduz o atrito entre as peças móveis
+                  do motor, ajuda a controlar a temperatura e contribui
+                  para a limpeza interna do sistema.
+                </p>
+
+                <h4>Respeite o prazo recomendado</h4>
+
+                <p>
+                  O intervalo de troca varia conforme o modelo do veículo,
+                  o tipo de óleo utilizado e as condições de uso.
+                  Consulte sempre o manual do proprietário.
+                </p>
+
+                <h4>Verifique o nível do óleo</h4>
+
+                <p>
+                  A verificação periódica ajuda a identificar possíveis
+                  alterações no nível. Faça a conferência conforme as
+                  orientações do fabricante e com o veículo em condições
+                  adequadas.
+                </p>
+
+                <h4>Não misture qualquer tipo de óleo</h4>
+
+                <p>
+                  Utilize o produto com a especificação indicada para o
+                  seu motor. A escolha incorreta pode comprometer a
+                  lubrificação e o funcionamento do veículo.
+                </p>
+
+                <video class="upcar-article-video" controls preload="metadata">
+                  <source src="assets/videos/videoplayback (3).mp4" type="video/mp4">
+                  Seu navegador não suporta a reprodução de vídeo.
+                </video>
+              </div>
+            </details>
+          </div>
+        </article>
+
+
+        <article class="upcar-article">
+          <img
+            class="upcar-article-image"
+            src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=85"
+            alt="Inspeção de componentes automotivos"
+          >
+
+          <div class="upcar-article-content">
+            <span class="upcar-article-category">Segurança</span>
+
+            <h3>Como identificar problemas nos freios?</h3>
+
+            <p>
+              Ruídos, vibrações e alterações no pedal podem indicar
+              desgaste ou falhas no sistema de freios. Identificar
+              esses sinais é fundamental para sua segurança.
+            </p>
+
+            <details>
+              <summary>Leia o artigo completo</summary>
+
+              <div class="upcar-article-full">
+                <h4>Ruídos ao frear</h4>
+
+                <p>
+                  Chiados, rangidos ou ruídos metálicos podem indicar
+                  desgaste de componentes ou alguma irregularidade
+                  no sistema.
+                </p>
+
+                <h4>Pedal diferente</h4>
+
+                <p>
+                  Se o pedal estiver muito baixo, duro ou apresentar
+                  comportamento diferente do habitual, procure uma
+                  avaliação profissional.
+                </p>
+
+                <h4>Vibração ao frear</h4>
+
+                <p>
+                  Vibrações no volante ou no pedal durante a frenagem
+                  podem estar relacionadas a componentes que precisam
+                  de inspeção.
+                </p>
+
+                <h4>Não adie a revisão</h4>
+
+                <p>
+                  O sistema de freios é essencial para a segurança.
+                  Ao perceber qualquer alteração, evite continuar
+                  utilizando o veículo sem uma avaliação adequada.
+                </p>
+
+                <video class="upcar-article-video" controls preload="metadata">
+                  <source src="assets/videos/videoplayback (2).mp4" type="video/mp4">
+                  Seu navegador não suporta a reprodução de vídeo.
+                </video>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="upcar-article">
+          <img
+            class="upcar-article-image"
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85"
+            alt="Pneu de automóvel"
+          >
+
+          <div class="upcar-article-content">
+            <span class="upcar-article-category">Dicas de direção</span>
+
+            <h3>Cuidados essenciais com os pneus</h3>
+
+            <p>
+              Os pneus são o único ponto de contato do veículo com o solo.
+              Manter a calibragem e verificar o desgaste ajuda a preservar
+              a estabilidade e a segurança.
+            </p>
+
+            <details>
+              <summary>Leia o artigo completo</summary>
+
+              <div class="upcar-article-full">
+                <h4>Calibre corretamente</h4>
+
+                <p>
+                  A pressão correta dos pneus deve seguir a recomendação
+                  do fabricante do veículo. Consulte o manual ou a etiqueta
+                  de especificações.
+                </p>
+
+                <h4>Observe o desgaste</h4>
+
+                <p>
+                  Desgaste irregular pode indicar problemas de alinhamento,
+                  balanceamento, calibragem ou suspensão.
+                </p>
+
+                <h4>Faça o alinhamento</h4>
+
+                <p>
+                  O alinhamento ajuda a manter as rodas na posição adequada,
+                  contribuindo para a estabilidade e para o desgaste mais
+                  uniforme dos pneus.
+                </p>
+
+                <h4>Verifique o estepe</h4>
+
+                <p>
+                  Não se esqueça de conferir as condições e a pressão
+                  do estepe. Ele também precisa estar pronto para uso
+                  quando necessário.
+                </p>
+
+                <video class="upcar-article-video" controls preload="metadata">
+                  <source src="assets/videos/videoplayback.mp4" type="video/mp4">
+                  Seu navegador não suporta a reprodução de vídeo.
+                </video>
+              </div>
+            </details>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="upcar-article-cta">
+        <p>
+          Percebeu algum sinal diferente no seu veículo?
+          Nossa equipe pode ajudar você.
+        </p>
+
+        <a
+          href="https://wa.me/5519991025373?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20do%20meu%20veículo."
+          target="_blank"
+          rel="noopener"
+        >
+          Fale com a UP CAR
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Entre em contato</h2>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <form id="contact" action="" method="post">
+            <div class="row">
+
+              <div class="col-md-6">
+                <fieldset>
+                  <input
+                    name="name"
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Seu nome"
+                    required
+                  >
+                </fieldset>
+              </div>
+
+              <div class="col-md-6">
+                <fieldset>
+                  <input
+                    name="email"
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Seu e-mail"
+                    required
+                  >
+                </fieldset>
+              </div>
+
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea
+                    name="message"
+                    rows="6"
+                    class="form-control"
+                    id="message"
+                    placeholder="Sua mensagem..."
+                    required
+                  ></textarea>
+                </fieldset>
+              </div>
+
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">
+                    Enviar mensagem
+                  </button>
+                </fieldset>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <div id="map">
+            <iframe
+              src="https://maps.google.com/maps?q=Av.+Ant%C3%B4nio+Centurione+B%C3%B6er,+1490,+Americana,+SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="422"
+              frameborder="0"
+              style="border:0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <p>
+            <i class="fa fa-copyright"></i>
+            UP CAR Serviços Automotivos – Todos os direitos reservados
+            <br>
+            Av. Antônio Centurione Bôer, 1490 – Jardim Brasil – Americana/SP
+            <br>
+            Telefone: (19) 3465-2507 |
+            WhatsApp: (19) 99102-5373 |
+            automotivosupcarservicos@gmail.com
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  <script>
+    $('.nav li:first').addClass('active');
+
+    var showSection = function(section, isAnimate) {
+      var direction = section.replace(/#/, '');
+
+      var reqSection = $('.section').filter(
+        '[data-section="' + direction + '"]'
+      );
+
+      if (!reqSection.length) return;
+
+      var reqSectionPos = reqSection.offset().top;
+
+      if (isAnimate) {
+        $('body, html').animate({
+          scrollTop: reqSectionPos
+        }, 800);
+      } else {
+        $('body, html').scrollTop(reqSectionPos);
+      }
+    };
+
+    var checkSection = function() {
+      $('.section').each(function() {
+        var $this = $(this);
+        var topEdge = $this.offset().top - 80;
+        var bottomEdge = topEdge + $this.height();
+        var wScroll = $(window).scrollTop();
+
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var currentId = $this.data('section');
+
+          var reqLink = $('a').filter(
+            '[href*=\\#' + currentId + ']'
+          );
+
+          reqLink.closest('li')
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+        }
+      });
+    };
+
+    $('.main-menu, .scroll-to-section').on('click', 'a', function(e) {
+      if ($(e.target).hasClass('external')) {
+        return;
+      }
+
+      var href = $(this).attr('href');
+
+      if (href && href.charAt(0) === '#') {
+        e.preventDefault();
+
+        $('#menu').removeClass('active');
+        showSection(href, true);
+      }
+    });
+
+    $(window).on('scroll', function() {
+      checkSection();
+    });
+  </script>
+  <script>
+    (function() {
+      var themeButton = document.getElementById('themeToggle');
+      var languageButton = document.getElementById('languageToggle');
+      var body = document.body;
+
+
+      function setTheme(theme) {
+        theme = theme === 'light' ? 'light' : 'dark';
+
+        body.classList.remove('dark-mode', 'light-mode');
+        body.classList.add(theme + '-mode');
+        body.setAttribute('data-theme', theme);
+
+        try {
+          localStorage.setItem('upcar-theme', theme);
+        } catch (e) {}
+
+        if (themeButton) {
+          themeButton.textContent =
+            theme === 'dark' ? '☀ Claro' : '☾ Escuro';
+
+          themeButton.setAttribute(
+            'aria-pressed',
+            theme === 'dark' ? 'true' : 'false'
+          );
+        }
+      }
+
+      var savedTheme = 'dark';
+
+      try {
+        savedTheme = localStorage.getItem('upcar-theme') || 'dark';
+      } catch (e) {}
+
+      setTheme(savedTheme);
+
+      if (themeButton) {
+        themeButton.addEventListener('click', function(event) {
+          event.preventDefault();
+
+          var nextTheme = body.classList.contains('dark-mode')
+            ? 'light'
+            : 'dark';
+
+          setTheme(nextTheme);
+        });
+      }
+
+     
+      var translations = {
+        'Início': 'Home',
+        'A UP CAR': 'About UP CAR',
+        'Quem somos': 'Who we are',
+        'O que fazemos?': 'What do we do?',
+        'Nossos diferenciais': 'Our advantages',
+        'Serviços': 'Services',
+        'Dicas automotivas': 'Automotive tips',
+        'Contato': 'Contact',
+
+        'Mecânica geral': 'General mechanics',
+        'Revisão preventiva': 'Preventive maintenance',
+        'Diagnóstico automotivo': 'Automotive diagnostics',
+
+        'Por que escolher a UP CAR?': 'Why choose UP CAR?',
+        'Experiência': 'Experience',
+        'Atendimento': 'Customer service',
+        'Compromisso com seu veículo': 'Commitment to your vehicle',
+
+        'Atendimento transparente': 'Transparent service',
+        'Nossos serviços': 'Our services',
+
+        'Troca de óleo e filtros': 'Oil and filter change',
+        'Alinhamento e balanceamento': 'Wheel alignment and balancing',
+        'Motor': 'Engine',
+        'Freios': 'Brakes',
+        'Suspensão': 'Suspension',
+        'Embreagem': 'Clutch',
+        'Câmbio automático e manual': 'Automatic and manual transmission',
+        'Manutenção preventiva': 'Preventive maintenance',
+        'Reparos automotivos': 'Automotive repairs',
+
+        'Entre em contato': 'Contact us',
+        'Conheça a UP CAR': 'Discover UP CAR',
+        'Solicitar atendimento': 'Request service',
+        'Enviar mensagem': 'Send message',
+        'Agendar': 'Schedule',
+        'Saiba mais': 'Learn more',
+        'Detalhes': 'Details',
+        'Fale com a UP CAR': 'Contact UP CAR',
+
+        'Seu nome': 'Your name',
+        'Seu e-mail': 'Your email',
+        'Seu telefone': 'Your phone',
+        'Sua mensagem...': 'Your message...',
+
+        'QUEM SOMOS': 'WHO WE ARE',
+        'EXCELÊNCIA AUTOMOTIVA': 'AUTOMOTIVE EXCELLENCE',
+
+        'O que significam as luzes do painel?':
+          'What do dashboard warning lights mean?',
+        'Quando trocar o óleo do motor?':
+          'When should you change your engine oil?',
+        'Como identificar problemas nos freios?':
+          'How to identify brake problems?',
+        'Cuidados essenciais com os pneus':
+          'Essential tire care',
+
+        'Cuidados com o veículo': 'Vehicle care',
+        'Manutenção preventiva': 'Preventive maintenance',
+        'Segurança': 'Safety',
+        'Dicas de direção': 'Driving tips',
+
+        'Leia o artigo completo': 'Read the full article',
+
+        'Fique atento aos sinais do seu carro':
+          'Pay attention to your car’s warning signs',
+        'Luz vermelha': 'Red warning light',
+        'Luz amarela ou laranja': 'Yellow or orange warning light',
+        'Não ignore os avisos': 'Do not ignore the warnings',
+
+        'Por que o óleo é tão importante?':
+          'Why is engine oil so important?',
+        'Respeite o prazo recomendado': 'Follow the recommended interval',
+        'Verifique o nível do óleo': 'Check the oil level',
+        'Não misture qualquer tipo de óleo':
+          'Do not mix different types of oil',
+
+        'Ruídos ao frear': 'Noises when braking',
+        'Pedal diferente': 'Changes in the brake pedal',
+        'Vibração ao frear': 'Vibration when braking',
+        'Não adie a revisão': 'Do not delay the inspection',
+
+        'Calibre corretamente': 'Check tire pressure',
+        'Observe o desgaste': 'Check tire wear',
+        'Faça o alinhamento': 'Get a wheel alignment',
+        'Verifique o estepe': 'Check the spare tire',
+
+        'Percebeu algum sinal diferente no seu veículo?':
+          'Noticed anything unusual about your vehicle?',
+        'Nossa equipe pode ajudar você.':
+          'Our team can help you.'
+      };
+
+   
+      var originalTextNodes = [];
+      var originalAttributes = [];
+
+      var walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT
+      );
+
+      while (walker.nextNode()) {
+        var node = walker.currentNode;
+
+        if (node.nodeValue.trim()) {
+          originalTextNodes.push({
+            node: node,
+            original: node.nodeValue
+          });
+        }
+      }
+
+      document.querySelectorAll(
+        'input[placeholder], textarea[placeholder], img[alt]'
+      ).forEach(function(element) {
+        if (element.hasAttribute('placeholder')) {
+          originalAttributes.push({
+            element: element,
+            attribute: 'placeholder',
+            original: element.getAttribute('placeholder')
+          });
+        }
+
+        if (element.hasAttribute('alt')) {
+          originalAttributes.push({
+            element: element,
+            attribute: 'alt',
+            original: element.getAttribute('alt')
+          });
+        }
+      });
+
+      var english = false;
+
+      function translatePage(useEnglish) {
+        english = useEnglish;
+
+        originalTextNodes.forEach(function(item) {
+          var original = item.original;
+          var key = original.trim();
+
+          if (useEnglish && translations[key]) {
+            item.node.nodeValue = original.replace(
+              key,
+              translations[key]
+            );
+          } else {
+            item.node.nodeValue = original;
+          }
+        });
+
+        originalAttributes.forEach(function(item) {
+          var key = item.original;
+
+          if (useEnglish && translations[key]) {
+            item.element.setAttribute(
+              item.attribute,
+              translations[key]
+            );
+          } else {
+            item.element.setAttribute(
+              item.attribute,
+              item.original
+            );
+          }
+        });
+
+        document.documentElement.lang = useEnglish ? 'en' : 'pt-BR';
+
+        if (languageButton) {
+          languageButton.textContent = useEnglish ? 'PT' : 'EN';
+        }
+      }
+
+      if (languageButton) {
+        languageButton.addEventListener('click', function() {
+          translatePage(!english);
+        });
+      }
+
+      document.querySelectorAll('form').forEach(function(form) {
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          var name = form.querySelector('[name="name"]');
+          var email = form.querySelector('[name="email"]');
+          var phone = form.querySelector('[name="phone-number"]');
+          var message = form.querySelector('[name="message"]');
+
+          var text =
+            'Olá, sou ' + (name ? name.value : '') +
+            (email ? '. E-mail: ' + email.value : '') +
+            (phone ? '. Telefone: ' + phone.value : '') +
+            (message ? '. Mensagem: ' + message.value : '') +
+            '. Gostaria de informações sobre os serviços da UP CAR.';
+
+          window.open(
+            'https://wa.me/5519991025373?text=' +
+            encodeURIComponent(text),
+            '_blank'
+          );
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
